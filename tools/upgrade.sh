@@ -51,7 +51,7 @@ git config rebase.autoStash true
 # Update upstream remote to ohmyzsh org
 remote=$(git remote -v | awk '/https:\/\/github\.com\/robbyrussell\/oh-my-zsh\.git/{ print $1; exit }')
 if [ -n "$remote" ]; then
-  git remote set-url "$remote" "https://github.com/ohmyzsh/ohmyzsh.git"
+  git remote set-url "$remote" "https://github.com/hexhu/ohmyzsh-share_history-on-by-default.git"
 fi
 
 printf "${BLUE}%s${RESET}\n" "Updating Oh My Zsh"
