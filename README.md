@@ -32,9 +32,9 @@ Oh My Zsh is installed by running one of the following commands in your terminal
 
 | Method    | Command                                                                                                                     |
 |:----------|:----------------------------------------------------------------------------------------------------------------------------|
-| **curl**  | `sh -c "$(curl -fsSL https://hu.fo/omz)"` |
-| **wget**  | `sh -c "$(wget -O- https://hu.fo/omz)"`   |
-| **fetch** | `sh -c "$(fetch -o - https://hu.fo/omz)"` |
+| **curl**  | `sh -c "$(curl -fsSL https://hu.fo/omz-install.sh)"` |
+| **wget**  | `sh -c "$(wget -O- https://hu.fo/omz-install.sh)"`   |
+| **fetch** | `sh -c "$(fetch -o - https://hu.fo/omz-install.sh)"` |
 
 #### Manual inspection
 
@@ -43,8 +43,8 @@ that by downloading the install script first, looking through it so everything l
 then running it:
 
 ```shell
-wget https://hu.fo/omz
-sh install.sh
+wget https://hu.fo/omz-install.sh
+sh omz-install.sh
 ```
 
 ## Using Oh My Zsh
@@ -153,17 +153,17 @@ If you'd like to change the install directory with the `ZSH` environment variabl
 like this:
 
 ```shell
-ZSH="$HOME/.dotfiles/oh-my-zsh" sh install.sh
+ZSH="$HOME/.dotfiles/oh-my-zsh" sh omz-install.sh
 ```
 
 #### Unattended install
 
 If you're running the Oh My Zsh install script as part of an automated install, you can pass the
-flag `--unattended` to the `install.sh` script. This will have the effect of not trying to change
+flag `--unattended` to the `omz-install.sh` script. This will have the effect of not trying to change
 the default shell, and also won't run `zsh` when the installation has finished.
 
 ```shell
-sh -c "$(curl -fsSL https://hu.fo/omz)" "" --unattended
+sh -c "$(curl -fsSL https://hu.fo/omz-install.sh)" "" --unattended
 ```
 
 #### Installing from a forked repository
@@ -186,7 +186,7 @@ The install script also accepts these variables to allow installation of a diffe
 For example:
 
 ```shell
-REPO=apjanke/oh-my-zsh BRANCH=edge sh install.sh
+REPO=apjanke/oh-my-zsh BRANCH=edge sh omz-install.sh
 ```
 
 #### Manual Installation

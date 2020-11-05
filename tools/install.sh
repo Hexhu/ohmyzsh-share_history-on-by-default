@@ -1,19 +1,19 @@
 #!/bin/sh
 #
 # This script should be run via curl:
-#   sh -c "$(curl -fsSL https://hu.fo/omz)"
+#   sh -c "$(curl -fsSL https://hu.fo/omz-install.sh)"
 # or via wget:
-#   sh -c "$(wget -qO- https://hu.fo/omz)"
+#   sh -c "$(wget -qO- https://hu.fo/omz-install.sh)"
 # or via fetch:
-#   sh -c "$(fetch -o - https://hu.fo/omz)"
+#   sh -c "$(fetch -o - https://hu.fo/omz-install.sh)"
 #
 # As an alternative, you can first download the install script and run it afterwards:
-#   wget https://hu.fo/omz
-#   sh install.sh
+#   wget https://hu.fo/omz-install.sh
+#   sh omz-install.sh
 #
 # You can tweak the install behavior by setting variables when running the script. For
 # example, to change the path to the Oh My Zsh repository:
-#   ZSH=~/.zsh sh install.sh
+#   ZSH=~/.zsh sh omz-install.sh
 #
 # Respects the following environment variables:
 #   ZSH     - path to the Oh My Zsh repository folder (default: $HOME/.oh-my-zsh)
@@ -31,9 +31,9 @@
 #   --unattended: sets both CHSH and RUNZSH to 'no'
 #   --keep-zshrc: sets KEEP_ZSHRC to 'yes'
 # For example:
-#   sh install.sh --unattended
+#   sh omz-install.sh --unattended
 # or:
-#   sh -c "$(curl -fsSL https://hu.fo/omz)" "" --unattended
+#   sh -c "$(curl -fsSL https://hu.fo/omz-install.sh)" "" --unattended
 #
 set -e
 
