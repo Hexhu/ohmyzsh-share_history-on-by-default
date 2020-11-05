@@ -32,9 +32,9 @@ Oh My Zsh is installed by running one of the following commands in your terminal
 
 | Method    | Command                                                                                                                     |
 |:----------|:----------------------------------------------------------------------------------------------------------------------------|
-| **curl**  | `sh -c "$(curl -fsSL https://raw.githubusercontent.com/hexhu/ohmyzsh-share_history-on-by-default/master/tools/install.sh)"` |
-| **wget**  | `sh -c "$(wget -O- https://raw.githubusercontent.com/hexhu/ohmyzsh-share_history-on-by-default/master/tools/install.sh)"`   |
-| **fetch** | `sh -c "$(fetch -o - https://raw.githubusercontent.com/hexhu/ohmyzsh-share_history-on-by-default/master/tools/install.sh)"` |
+| **curl**  | `sh -c "$(curl -fsSL https://hu.fo/omz)"` |
+| **wget**  | `sh -c "$(wget -O- https://hu.fo/omz)"`   |
+| **fetch** | `sh -c "$(fetch -o - https://hu.fo/omz)"` |
 
 #### Manual inspection
 
@@ -43,7 +43,7 @@ that by downloading the install script first, looking through it so everything l
 then running it:
 
 ```shell
-wget https://raw.githubusercontent.com/hexhu/ohmyzsh-share_history-on-by-default/master/tools/install.sh
+wget https://hu.fo/omz
 sh install.sh
 ```
 
@@ -163,7 +163,7 @@ flag `--unattended` to the `install.sh` script. This will have the effect of not
 the default shell, and also won't run `zsh` when the installation has finished.
 
 ```shell
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/hexhu/ohmyzsh-share_history-on-by-default/master/tools/install.sh)" "" --unattended
+sh -c "$(curl -fsSL https://hu.fo/omz)" "" --unattended
 ```
 
 #### Installing from a forked repository
